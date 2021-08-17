@@ -1,1 +1,4 @@
 # Connect4-Minimax-and-alpha-and-beta-pruning-algorithm
+
+Connect four is a two player connection board game in which players take turns dropping one colored disc form the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the lowest available space within the column. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one’s own disc. Connect four is a solved game. The first player can always win by playing the right moves. It’s original authors were Howard Wexler and Ned Strongin , and it was first sold under that trademark in 1974 by Milton Bradley.
+This version of Connect four game was upgraded with AI thinking using Minimax and α-β pruning algorithm. Said that, the game was constructed in JavaScript powered with HTML structure and CSS design. 
