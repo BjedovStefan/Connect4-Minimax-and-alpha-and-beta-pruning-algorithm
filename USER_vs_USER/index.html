@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Artificial Intelligence based on the Minimax- and α-β-Pruning principles.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Connect Four - Alpha-Beta Algorithm</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div id="container">
+            <h1 class="header-text">Connect-4 game</h1>
+            
+            <div class="box-left">
+                <table id="game_board" cellpadding="0"></table>
+            </div>
+
+            <div class="box-right">
+                <div id="options">
+                  <p class="header">Players</p>
+                  <p>
+                      <select onchange="selectPlay(this)" autocomplete="off">
+                        <option value="minimax">User vs AI</option>
+                          <option value="AI_vs_AI">AI vs AI</option>
+                          <option value="USER_vs_USER" selected>User vs User</option>
+                      </select>
+                  </p>
+                   </br>
+                    <p><button class="save" onclick="Game.restartGame();" type="submit">Restart game</button></p>
+                </div>
+
+                <div id="debug">
+                    <p><strong>Yellow player stats</strong></p>
+                    <p><span id="yellow-moves">No. moves: ?</span></p>
+                    </br>
+                    <p><strong>Red player stats</strong></p>
+                    <p><span id="red-moves">No. moves: ?</span></p>
+                    </br>
+                    <p><span id="total-moves">Total moves: ?</span></p>
+                    <br/>
+                    <p>Status: <span id="status" class="status-running">running...</span></p>
+                </div>
+
+
+
+            </div>
+        </div>
+
+     <script>
+        function selectPlay(that) {
+            window.location = '../' + that.value + '/index.html';
+        };
+      </script>
+
+        <script src="js/board.js"></script>
+        <script src="js/connect-four.js"></script>
+    </body>
+</html>
